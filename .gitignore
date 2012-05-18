@@ -32,3 +32,4 @@ tmp
 .yardoc
 _yardoc
 doc/
+.rvmrc
