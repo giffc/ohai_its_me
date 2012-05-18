@@ -1,0 +1,12 @@
+<div id="posts" class='thumbnails'>
+  <div class='post about_post'><%= about %></div>
+</div>
+<div class='clear' />
+
+<!-- <%# if @data.length > 0 %>
+  <a id="load_posts" class="btn btn-large invisible" type="submit">Load more</a>
+<%# end %> -->
+
+<pre>
+  <%= JSON.pretty_generate @data %>
+</pre>
