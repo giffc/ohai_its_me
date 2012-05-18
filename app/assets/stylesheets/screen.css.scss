@@ -86,7 +86,7 @@ p {
   font-size: 1.4em;
 }
 
-.content {
+.container {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
@@ -105,7 +105,6 @@ p {
 }
 .lifelog_event:before {
   content: '';
-  background: $spriteurl no-repeat 0px -100px;
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -114,4 +113,18 @@ p {
   left: 50%;
   margin-left: -25px;
 }
-
+.lifelog_event.instagram:before {
+  background: $spriteurl no-repeat 0px 0px;
+}
+.lifelog_event.twitter:before {
+  background: $spriteurl no-repeat 0px -50px;
+}
+.lifelog_event.tumblr:before {
+  background: $spriteurl no-repeat 0px -100px;
+}
+.lifelog_event.foursquare:before {
+  background: $spriteurl no-repeat 0px -150px;
+}
+.lifelog_event.instagram:before {
+  background: $spriteurl no-repeat 0px 0px;
+}

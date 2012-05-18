@@ -33,3 +33,5 @@ tmp
 _yardoc
 doc/
 .rvmrc
+public/.DS_Store
+.DS_Store

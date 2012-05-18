@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20120502021651) do
 
   create_table "linked_accounts", :force => true do |t|
-    t.integer   "user_id"
+    t.integer  "user_id"
     t.string   "type"
     t.string   "app_username"
     t.string   "app_user_id"
