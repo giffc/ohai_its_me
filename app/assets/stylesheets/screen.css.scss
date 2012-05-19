@@ -219,3 +219,14 @@ p {
 .lifelog_post.Foursquare:before {
   background: $spriteurl no-repeat 0px -150px;
 }
+
+/*******************************************************/
+
+@media screen and (max-width: 400px) {
+  .header_with_pic {
+    height: 140px;
+    .header_image {
+      height: 120px;
+    }
+  }
+}
