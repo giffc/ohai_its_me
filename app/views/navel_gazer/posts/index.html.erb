@@ -1,15 +1,17 @@
 <div id="about">
+<!--
+  <div class="header_no_pic">
+    <h1>Chris Carella</h1>
+  </div>
+-->
   <div class="header_with_pic">
     <div class="header_image">
       <img src="/images/temp_img.jpg" />
     </div>
-    <div class="header_text">
-      Chris Carella
-    </div>
+    <h1>Chris Carella</h1>
   </div>
 </div>
 <div class="posts">
-  <h1>May 28, 2011</h1>
   <%= render :partial => 'posts/posts_by_date.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
 
     <div class='clear' />
@@ -18,8 +20,5 @@
     <a id="load_posts" class="btn btn-large invisible" type="submit">Load more</a>
   <%# end %> -->
 
+  <div ID="load_more">Load another 25 days</div>
 </div>
-
-<pre>
-  <%= JSON.pretty_generate @data.as_json %>
-</pre>

@@ -75,7 +75,7 @@ ul li, ol li { list-style-type: none; }
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-h1 { 
+h2 { 
   color: $dark-grey;
   font-family: adelle, arial, sans-serif;
   font-weight: 600;  /* regular is 400, bold is 700 */
@@ -87,7 +87,7 @@ h1 {
   height: 1.3em;
   line-height: 1.3em;
 }
-h1:after {
+h2:after {
   content: "";
   position: absolute;
   background: none repeat scroll 0 0 #ffffff;
@@ -112,10 +112,52 @@ p {
   margin: 0 auto;
   width: 100%;
   max-width: 600px; 
+  padding: 0 20px 50px 20px;
 }
 
+/******* HEADER ************************/
+
+#about {
+  color: $dark-grey;
+  font-family: adelle, arial, sans-serif;
+  font-weight: 600;  /* regular is 400, bold is 700 */
+  .header_no_pic {
+    padding: 20px;
+    h1 {
+      font-size: 3.6em;
+      color: $medium_grey;
+    }
+  }
+  .header_with_pic {
+    height: 170px;
+    padding: 0 20px 20px 20px;
+    margin-bottom: 20px;
+    @include border-radius(0 0px $post-border-radius $post-border-radius);
+    @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.5));
+    overflow: hidden;
+    position: relative;
+    .header_image {
+      height: 150px;
+      @include border-radius(0 0 $img-border-radius $img-border-radius);
+      overflow: hidden;
+    }
+    img {
+      width: 100%;
+    }
+    h1 {
+      font-size: 3.6em;
+      color: $white;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+      position: absolute;
+      bottom: 25px;
+      left: 30px;
+    }
+  }
+}
+
+/******* POSTS ************************/
+
 .posts {
-  padding: 0 20px 50px 20px;
   position: relative;
 }
 .posts:before {
@@ -128,44 +170,8 @@ p {
   bottom: 50px;
 }
 
-#about {
-  color: $dark-grey;
-  font-family: adelle, arial, sans-serif;
-  font-weight: 600;  /* regular is 400, bold is 700 */
-  padding: 0 20px;
-  .header_no_pic {
-    font-size: 3.6em;
-    color: $medium_grey;
-  }
-  .header_with_pic {
-    height: 170px;
-    padding: 0 20px 20px 20px;
-    margin-bottom: 20px;
-    @include border-radius(0 0px 6px 6px);
-    @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.5));
-    overflow: hidden;
-    position: relative;
-    .header_image {
-      height: 150px;
-      @include border-radius(0 0 4px 4px);
-      overflow: hidden;
-    }
-    img {
-      width: 100%;
-    }
-    .header_text {
-      font-size: 3.6em;
-      color: $white;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-      position: absolute;
-      bottom: 25px;
-      left: 30px;
-    }
-  }
-}
-
 .lifelog_post {
-  @include border-radius(6px);
+  @include border-radius($post-border-radius);
   @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.5));
   background-color: #ffffff;
   padding: 20px;
@@ -173,7 +179,7 @@ p {
   position: relative;
   img {
     width: 100%;
-    @include border-radius(4px);
+    @include border-radius($img-border-radius);
   }
   .lifelog_text {
     position: relative;
@@ -215,4 +221,40 @@ p {
 }
 .lifelog_post.Foursquare:before {
   background: $spriteurl no-repeat 0px -150px;
+}
+
+#load_more {
+  @include border-radius($button-border-radius);
+  background-color: $bright_blue;
+  @include box-shadow(1px 2px 2px 0px rgba(0,0,0,0.5));
+  font-family: adelle, arial, sans-serif;
+  font-weight: 600;  /* regular is 400, bold is 700 */
+  font-size: 2.0em;
+  color: $white;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px;
+}
+#load_more:hover {
+  
+}
+
+/*******************************************************/
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #about {
+    .header_with_pic {
+      height: 120px;
+      .header_image {
+        height: 100px;
+      }
+      h1 {
+        font-size: 2.6em;
+      }
+    }
+  }
 }
