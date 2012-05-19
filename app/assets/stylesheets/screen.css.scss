@@ -125,7 +125,7 @@ p {
   bottom: 50px;
 }
 
-.lifelog_event {
+.lifelog_post {
   @include border-radius(6px);
   @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.55));
   background-color: #ffffff;
@@ -150,7 +150,7 @@ p {
     }
   }
 }
-.lifelog_event:before {
+.lifelog_post:before {
   content: '';
   width: 50px;
   height: 50px;
@@ -160,18 +160,18 @@ p {
   left: 50%;
   margin-left: -25px;
 }
-.lifelog_event.instagram:before {
+.lifelog_post.instagram:before {
   background: $spriteurl no-repeat 0px 0px;
 }
-.lifelog_event.twitter:before {
+.lifelog_post.twitter:before {
   background: $spriteurl no-repeat 0px -50px;
 }
-.lifelog_event.tumblr:before {
+.lifelog_post.tumblr:before {
   background: $spriteurl no-repeat 0px -100px;
 }
-.lifelog_event.foursquare:before {
+.lifelog_post.foursquare:before {
   background: $spriteurl no-repeat 0px -150px;
 }
-.lifelog_event.instagram:before {
+.lifelog_post.instagram:before {
   background: $spriteurl no-repeat 0px 0px;
 }
