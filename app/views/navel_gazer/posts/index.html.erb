@@ -10,7 +10,7 @@
 </div>
 <div class="posts">
   <h1>May 28, 2011</h1>
-  <%= render :partial => 'posts/posts.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
+  <%= render :partial => 'posts/posts_by_date.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
 
     <div class='clear' />
 
@@ -18,7 +18,8 @@
     <a id="load_posts" class="btn btn-large invisible" type="submit">Load more</a>
   <%# end %> -->
 
-  <pre>
-    <%= JSON.pretty_generate @data.as_json %>
-  </pre>
 </div>
+
+<pre>
+  <%= JSON.pretty_generate @data.as_json %>
+</pre>

@@ -15,20 +15,19 @@ GIT
       rails
 
 GIT
-  remote: git@github.com:becarella/navel_gazer.git
-  revision: a6abf50d138b1b0f312a476fff3da2fb606f0aae
-  specs:
-    navel_gazer (0.0.1)
-      embedly
-      rails
-      rest-client
-
-GIT
   remote: git@github.com:becarella/render_or_redirect.git
   revision: c9d0f2236e275950d7abd6dc2401975fdf84aa32
   specs:
     render_or_redirect (0.0.1)
       rails
+
+PATH
+  remote: ../navel_gazer
+  specs:
+    navel_gazer (0.0.1)
+      embedly
+      rails
+      rest-client
 
 GEM
   remote: http://rubygems.org/

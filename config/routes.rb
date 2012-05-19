@@ -1,8 +1,8 @@
 BecarellaHome::Application.routes.draw do
   get "static_pages/index"
 
-  root :to => 'posts#index'
-  match 'posts' => 'posts#index'
+  root :to => 'navel_gazer/posts#index'
+  match 'posts(/:method)' => 'navel_gazer/posts#index'
 
   match 'signin' => 'let_me_in/sessions#new'
   match 'signout' => 'let_me_in/sessions#destroy'
