@@ -72,6 +72,9 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl, small, label, th, td {
 
 ul li, ol li { list-style-type: none; }
 
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
 h1 { 
   color: $dark-grey;
   font-family: adelle, arial, sans-serif;
@@ -127,7 +130,7 @@ p {
 
 .lifelog_post {
   @include border-radius(6px);
-  @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.55));
+  @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.5));
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 50px;
@@ -144,6 +147,10 @@ p {
       right: 0px;
       font-size: 1.2em;
       cursor: pointer;
+      color: $bright_blue;
+      a {
+        color: $bright_blue;
+      }
     }
     .permalink:hover{
       text-decoration: underline;
@@ -160,18 +167,15 @@ p {
   left: 50%;
   margin-left: -25px;
 }
-.lifelog_post.instagram:before {
+.lifelog_post.Instagram:before {
   background: $spriteurl no-repeat 0px 0px;
 }
-.lifelog_post.twitter:before {
+.lifelog_post.Twitter:before {
   background: $spriteurl no-repeat 0px -50px;
 }
-.lifelog_post.tumblr:before {
+.lifelog_post.Tumblr:before {
   background: $spriteurl no-repeat 0px -100px;
 }
-.lifelog_post.foursquare:before {
+.lifelog_post.Foursquare:before {
   background: $spriteurl no-repeat 0px -150px;
-}
-.lifelog_post.instagram:before {
-  background: $spriteurl no-repeat 0px 0px;
 }

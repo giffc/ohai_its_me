@@ -1,24 +1,16 @@
 <div class="lifelog_post {{linked_account.type}}" data-href="{{permalink}}">
-  <div class="meta">
-    <div class="logo"></div>
-    <div class="source"><h3>{{linked_account.type}}</h3></div>
-    <div class="about">
-      <a href="{{permalink}}" target="_blank"><span class="timestamp">{{source_created_at}}</span></a>
-    </div>
-    <div class="clear"></div>
-  </div>
   <div class="media">
     {{#photos}}
       <div style='width: {{width}}px, height: {{height}}px'>
-        <img src='{{html}}' />
+        <img src='{{html}}' title='{{created_at}}' />
       </div>
     {{/photos}}
     <div class='clear'></div>
   </div>
   {{#if content}}
-    <div class="content">
-      {{content}}
-      <div class='clear'></div>
+    <div class="lifelog_text">
+      <p>{{content}}</p>
+      <div class="permalink"><a href="{{permalink}}" target="_blank">link</a></div>
     </div>
   {{/if}}
 </div>  
