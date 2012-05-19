@@ -1,8 +1,11 @@
-<div id="posts" class='thumbnails'>
-  <div class='post about_post'><%= about %></div>
-  <%= render :partial => 'posts/posts.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
+<div id="about">
+  text here
 </div>
-<div class='clear' />
+
+<h1>May 28, 2011</h1>
+<%= render :partial => 'posts/posts.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
+
+  <div class='clear' />
 
 <!-- <%# if @data.length > 0 %>
   <a id="load_posts" class="btn btn-large invisible" type="submit">Load more</a>
