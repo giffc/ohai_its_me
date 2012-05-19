@@ -63,6 +63,7 @@ table {
 
 body {
   font-size: 62.5%;
+  font-family: myriad-pro, arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, small, label, th, td {
@@ -97,16 +98,17 @@ h1:after {
 }
 
 p {
-  color: $dark-grey;
+  color: $medium-dark-grey;
   font-family: myriad-pro, arial, sans-serif;
   font-weight: 400;  /* light is 300, bold is 700 */
-  font-size: 1.4em;
+  font-size: 1.6em;
+  line-height: 1.5em;
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 600px; 
 }
 
 .main {
@@ -125,14 +127,27 @@ p {
 
 .lifelog_event {
   @include border-radius(6px);
-  @include box-shadow(1px 1px 3px 0px rgba(0,0,0,0.5));
+  @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.55));
   background-color: #ffffff;
   padding: 20px;
   margin-bottom: 50px;
   position: relative;
   img {
     width: 100%;
-    height: 100%;
+  }
+  .lifelog_text {
+    position: relative;
+    margin: 12px 0 0 0;
+    .permalink {
+      position: absolute;
+      bottom: -10px;
+      right: 0px;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+    .permalink:hover{
+      text-decoration: underline;
+    }
   }
 }
 .lifelog_event:before {
