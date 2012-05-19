@@ -11,7 +11,6 @@ class HandlebarsConfig
   def self.register_partials
     dir = File.expand_path("../../app/assets/templates", __FILE__)
     Dir[File.join(dir, "**/*.jst.hbs")].each {|t| 
-      puts "registering #{t}"
       register_partial(t.split(/[\/\._]/)[-3], t)
     }
   end
