@@ -1,5 +1,6 @@
-in your ~/.bash_profile
+in ``~/.bash_profile``
 
+```
   export TWITTER_KEY="u7wnUBikdHd4n2hXOqcg"
   export TWITTER_SECRET="YRXXhFz8SiAuYjHtEHYGd6Jn7C54H4YPGgmdhQ8mU"
   
@@ -7,26 +8,26 @@ in your ~/.bash_profile
   
   export INSTAGRAM_KEY="5514305314d64036b495104345911dfa"
   export INSTAGRAM_SECRET="70d8e9f8b77b4637ad919514a807c046"
-
+```
 restart terminal
 
+```
   rake db:setup
 
   rails c
-  User.create(:username => "your_username", :email => "your@email.com", :password => "test", :password_confirmation => "test")
+  > User.create(:username => "your_username", :email => "your@email.com", :password => "test", :password_confirmation => "test")
   exit
+```
 
-  rails s
-go to http://localhost:3000/signin
+``rails s``
+go to [http://localhost:3000/signin](http://localhost:3000/signin)
 signin
-go to http://localhost:3000/accounts link your accounts
+go to [http://localhost:3000/accounts](http://localhost:3000/accounts) link your accounts
 
-  rails c
+``rails c``
+```
   User.first.linked_accounts.each{|a| a.import}
   exit
+```
 
-go to http://localhost:3000/
-
-
-
-
+go to [http://localhost:3000/](http://localhost:3000/)
