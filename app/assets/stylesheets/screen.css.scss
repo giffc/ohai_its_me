@@ -75,7 +75,7 @@ ul li, ol li { list-style-type: none; }
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-h1 { 
+h2 { 
   color: $dark-grey;
   font-family: adelle, arial, sans-serif;
   font-weight: 600;  /* regular is 400, bold is 700 */
@@ -87,7 +87,7 @@ h1 {
   height: 1.3em;
   line-height: 1.3em;
 }
-h1:after {
+h2:after {
   content: "";
   position: absolute;
   background: none repeat scroll 0 0 #ffffff;
@@ -134,8 +134,11 @@ p {
   font-weight: 600;  /* regular is 400, bold is 700 */
   padding: 0 20px;
   .header_no_pic {
-    font-size: 3.6em;
-    color: $medium_grey;
+    padding: 20px;
+    h1 {
+      font-size: 3.6em;
+      color: $medium_grey;
+    }
   }
   .header_with_pic {
     height: 170px;
@@ -153,7 +156,7 @@ p {
     img {
       width: 100%;
     }
-    .header_text {
+    h1 {
       font-size: 3.6em;
       color: $white;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
