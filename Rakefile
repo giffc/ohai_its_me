@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-BecarellaHome::Application.load_tasks
+Lifelogline::Application.load_tasks

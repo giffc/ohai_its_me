@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git@github.com:becarella/let_me_in.git
-  revision: 3e1f86cac2525859b201d0acd5b0b4e76e7545d8
+  revision: 2edc32ad9eca3780164cdb6421e2e64f736337f7
   specs:
     let_me_in (0.0.1)
       bcrypt-ruby (~> 3.0.0)
@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git@github.com:becarella/navel_gazer.git
-  revision: 182c822ee0f3c95b13a2a76fe9c0b23b75c24eb2
+  revision: 34be93d032476f433aea6a030a8c284cbb5c0204
   specs:
     navel_gazer (0.0.1)
       embedly

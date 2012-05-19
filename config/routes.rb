@@ -1,4 +1,4 @@
-BecarellaHome::Application.routes.draw do
+Lifelogline::Application.routes.draw do
   get "static_pages/index"
 
   root :to => 'navel_gazer/posts#index'
