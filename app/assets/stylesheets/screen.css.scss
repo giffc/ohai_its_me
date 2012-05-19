@@ -97,7 +97,7 @@ h2:after {
   border: 3px solid $dark_grey;
   top: 1.2em;
   left: 50%;
-  margin: 0 0 0 -9px;
+  margin: 0 0 0 -10px;
 }
 
 p {
@@ -168,6 +168,7 @@ p {
   left: 50%;
   top: 50px;
   bottom: 50px;
+  margin-left: -1px;
 }
 
 .lifelog_post {
