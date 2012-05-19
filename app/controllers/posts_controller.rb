@@ -6,6 +6,6 @@ class PostsController < ApplicationController
                 .limit((params[:limit] || 20).to_i)
                 .offset((params[:offset] || 0).to_i)
                 .all
-    render_or_redirect posts.as_json
+    render_or_redirect posts
   end
 end

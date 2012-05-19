@@ -11,7 +11,6 @@ gem "render_or_redirect", :git => 'git@github.com:becarella/render_or_redirect.g
 gem 'let_me_in', :git => 'git@github.com:becarella/let_me_in.git'
 gem 'navel_gazer', :git => 'git@github.com:becarella/navel_gazer.git'
 
-
 gem 'omniauth-identity'
 gem 'omniauth-instagram'
 gem 'omniauth-twitter', '0.0.8'

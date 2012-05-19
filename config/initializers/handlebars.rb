@@ -1,0 +1,1 @@
+HandlebarsConfig.register_partials
