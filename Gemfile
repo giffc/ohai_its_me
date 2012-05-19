@@ -9,8 +9,7 @@ gem 'pg'
 
 gem "render_or_redirect", :git => 'git@github.com:becarella/render_or_redirect.git'
 gem 'let_me_in', :git => 'git@github.com:becarella/let_me_in.git'
-#gem 'navel_gazer', :git => 'git@github.com:becarella/navel_gazer.git'
-gem 'navel_gazer', :path => '../navel_gazer'
+gem 'navel_gazer', :git => 'git@github.com:becarella/navel_gazer.git'
 
 gem 'omniauth-identity'
 gem 'omniauth-instagram'
