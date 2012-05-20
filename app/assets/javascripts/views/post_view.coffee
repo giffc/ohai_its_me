@@ -38,11 +38,12 @@ window.DatedAccountPostsView = Backbone.View.extend
   tagName: "div"
   class: "account"
   template: JST["posts/account"]
-  events:
-    "click .post_expander": "expand"
+  # events:  # this clicks on the parent object on the phone
+  #   "click div.post_expander": "expand"
 
   initialize: (options) ->
     _.bindAll @
+    @$el.find('.post_expander').click @expand
     #@model.posts.on("reset", @render)
     
   expand: ->
