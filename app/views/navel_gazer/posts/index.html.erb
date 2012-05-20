@@ -14,7 +14,6 @@
 <div class="posts">
   <%= render :partial => 'posts/posts_by_date.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
 </div>
-<div class='clear' />
 <% if @data.length > 0 %>
   <div id="load_more">Load another 25 days</div>
 <% end %>
