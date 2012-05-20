@@ -99,6 +99,9 @@ h2:after {
   left: 50%;
   margin: 0 0 0 -10px;
 }
+h2:first-child {
+  margin-top: 30px;
+}
 
 p {
   color: $medium-dark-grey;
@@ -177,8 +180,27 @@ p {
   background-color: #ffffff;
   padding: 20px;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   position: relative;
+  &.Foursquare:before {
+    background: $spriteurl no-repeat 0px -150px;
+  }
+  &.Instagram:before {
+    background: $spriteurl no-repeat 0px 0px;
+  }
+  &.Twitter:before {
+    background: $spriteurl no-repeat 0px -50px;
+  }
+  &.Tumblr:before {
+    background: $spriteurl no-repeat 0px -100px;
+  }
+  &.Foursquare:before {
+    background: $spriteurl no-repeat 0px -150px;
+  }
+  &.Lastfm:before {
+    background: $spriteurl no-repeat -50px 0px;
+  }
+  
   .media {
     text-align: center;
   }
@@ -187,13 +209,21 @@ p {
     @include border-radius($img-border-radius);
   }
   .lifelog_text {
+    color: $medium-dark-grey;
+    font-family: myriad-pro, arial, sans-serif;
+    font-weight: 400;  /* light is 300, bold is 700 */
+    font-size: 1.6em;
+    line-height: 1.5em;
     position: relative;
     margin: 12px 0 0 0;
+    p {
+      font-size: 1em;
+    }
     .permalink {
       position: absolute;
-      bottom: -10px;
+      bottom: -16px;
       right: 0px;
-      font-size: 1.2em;
+      font-size: .9em;
       cursor: pointer;
       color: $bright_blue;
       a {
@@ -215,23 +245,11 @@ p {
   left: 50%;
   margin-left: -25px;
 }
-.lifelog_post.Instagram:before {
-  background: $spriteurl no-repeat 0px 0px;
-}
-.lifelog_post.Twitter:before {
-  background: $spriteurl no-repeat 0px -50px;
-}
-.lifelog_post.Tumblr:before {
-  background: $spriteurl no-repeat 0px -100px;
-}
-.lifelog_post.Foursquare:before {
-  background: $spriteurl no-repeat 0px -150px;
-}
 
 .post_expander {
   font-family: adelle, arial, sans-serif;
   font-weight: 600;  /* regular is 400, bold is 700 */
-  font-size: 1.8em;
+  font-size: 1.6em;
   color: $bright_blue;
   background-color: $white;
   cursor: pointer;
