@@ -7,13 +7,6 @@ window.PostView = Backbone.View.extend
     _.bindAll @
     @model.on("change", => @render())
   
-  toggleConnect: (event) ->
-    if @model.isConnected() || @model.isExpired()
-      @model.destroy()
-    else
-      openPopup 600, 400, "/auth/#{@model.get('type')}/connect"
-    false
-  
   render: ->
     @$el.html @template(@model.toJSON())
     @
