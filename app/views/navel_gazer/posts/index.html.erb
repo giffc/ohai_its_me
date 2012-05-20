@@ -13,16 +13,12 @@
 </div>
 <div class="posts">
   <%= render :partial => 'posts/posts_by_date.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
-
-    <div class='clear' />
-
-  <!-- <%# if @data.length > 0 %>
-    <a id="load_posts" class="btn btn-large invisible" type="submit">Load more</a>
-  <%# end %> -->
-
-  <div ID="load_more">Load another 25 days</div>
+  <div class='clear' />
+  <% if @data.length > 0 %>
+    <div id="load_more">Load another 25 days</div>
+  <% end %>
 </div>
 
 <pre>
-  <%#= JSON.pretty_generate({:data => @data.as_json }) %>
+  <%= JSON.pretty_generate({:data => @data.as_json }) %>
 </pre>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120502021651) do
+ActiveRecord::Schema.define(:version => 20120519224809) do
 
   create_table "linked_accounts", :force => true do |t|
     t.integer  "user_id"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20120502021651) do
     t.string   "thumbnail_url"
     t.integer  "thumbnail_width"
     t.integer  "thumbnail_height"
-    t.string   "description"
+    t.text     "description"
     t.string   "url"
     t.integer  "width"
     t.integer  "height"

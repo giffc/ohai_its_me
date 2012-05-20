@@ -6,6 +6,15 @@ GIT
       omniauth-oauth2 (~> 1.0.0)
 
 GIT
+  remote: git://github.com/goggin13/handlebars_assets
+  revision: d6a500a6c80cda4f990df68cc41d0298f8ebfa61
+  specs:
+    handlebars_assets (0.4.1)
+      execjs (>= 1.2.9)
+      sprockets (>= 2.0.3)
+      tilt
+
+GIT
   remote: git@github.com:becarella/let_me_in.git
   revision: 2edc32ad9eca3780164cdb6421e2e64f736337f7
   specs:
@@ -16,7 +25,7 @@ GIT
 
 GIT
   remote: git@github.com:becarella/navel_gazer.git
-  revision: 34be93d032476f433aea6a030a8c284cbb5c0204
+  revision: b22b9b6bfc4b96f88b914c033f898de0d5474c96
   specs:
     navel_gazer (0.0.1)
       embedly
@@ -82,10 +91,6 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.0)
       multipart-post (~> 1.1)
-    handlebars_assets (0.4.4)
-      execjs (>= 1.2.9)
-      sprockets (>= 2.0.3)
-      tilt
     hashie (1.2.0)
     hbs (0.1.2)
       therubyracer (~> 0.9.4)
@@ -193,7 +198,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
-  handlebars_assets
+  handlebars_assets!
   hbs
   jquery-rails
   let_me_in!

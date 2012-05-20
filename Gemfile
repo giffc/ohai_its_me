@@ -19,8 +19,7 @@ gem 'omniauth-foursquare'
 gem 'omniauth-tumblr'
 
 gem 'hbs'
-gem 'handlebars_assets'
-
+gem 'handlebars_assets', :git => 'git://github.com/goggin13/handlebars_assets'
 
 # Gems used only for assets and not required
 # in production environments by default.
