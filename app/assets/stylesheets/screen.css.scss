@@ -147,6 +147,7 @@ p {
       position: relative;
       img {
         width: 100%;
+        @include border-radius(0 0 $img-border-radius $img-border-radius);
       }
       h1 {
         font-size: 3.2em;
