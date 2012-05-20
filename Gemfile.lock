@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: git@github.com:becarella/navel_gazer.git
-  revision: 4c67b0d7dec567ad2f329967e04112808ba63360
+  revision: 966eaba6b8ec39d5c0cfd4f673872bc27e441e7d
   specs:
     navel_gazer (0.0.1)
       embedly
@@ -125,6 +125,9 @@ GEM
     omniauth-instagram (1.0.0)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
+    omniauth-lastfm (0.0.2)
+      omniauth-oauth (~> 1.0)
+      rest-client (~> 1.6.6)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
@@ -207,6 +210,7 @@ DEPENDENCIES
   omniauth-foursquare
   omniauth-identity
   omniauth-instagram
+  omniauth-lastfm
   omniauth-tumblr
   omniauth-twitter (= 0.0.8)
   pg
