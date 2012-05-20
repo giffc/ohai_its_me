@@ -114,7 +114,8 @@ p {
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 520px; 
+  max-width: 520px;
+  min-width: 320px;
   padding: 0 20px 50px 20px;
 }
 
@@ -132,28 +133,26 @@ p {
     }
   }
   .header_with_pic {
-    height: 170px;
     padding: 0 20px 20px 20px;
     margin-bottom: 20px;
     @include border-radius(0 0px $post-border-radius $post-border-radius);
     @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.5));
     overflow: hidden;
-    position: relative;
     .header_image {
-      height: 150px;
       @include border-radius(0 0 $img-border-radius $img-border-radius);
       overflow: hidden;
-    }
-    img {
-      width: 100%;
-    }
-    h1 {
-      font-size: 3.2em;
-      color: $white;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-      position: absolute;
-      bottom: 25px;
-      left: 30px;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      h1 {
+        font-size: 3.2em;
+        color: $white;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
     }
   }
 }
@@ -293,12 +292,11 @@ pre {
   }
   #about {
     .header_with_pic {
-      height: 120px;
       .header_image {
-        height: 100px;
-      }
-      h1 {
-        font-size: 2.6em;
+        height: 85px;
+        h1 {
+          font-size: 2.4em;
+        }
       }
     }
   }
