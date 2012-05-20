@@ -1,13 +1,14 @@
 Router = Backbone.Router.extend
 
   routes: 
-    "": "posts"
+    "": "dates"
 
-  posts: ->
-    console.debug "route: posts"
+  dates: ->
+    console.debug "route: dates"
     if preloaded_data?
-      posts = (new Posts).reset(preloaded_data)
-      view = new PostsView collection: posts, el: '.posts'
+      dates = (new Dates).reset(preloaded_data)
+      console.debug dates
+      view = new DatesView collection: dates, el: '.dates'
   
       
 window.admin_router = new Router()

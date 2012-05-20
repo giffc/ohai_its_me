@@ -9,8 +9,8 @@ gem 'pg'
 
 gem "render_or_redirect", :git => 'git@github.com:becarella/render_or_redirect.git'
 gem 'let_me_in', :git => 'git@github.com:becarella/let_me_in.git'
-gem 'navel_gazer', :git => 'git@github.com:becarella/navel_gazer.git'
-#gem 'navel_gazer', :path => '../navel_gazer'
+#gem 'navel_gazer', :git => 'git@github.com:becarella/navel_gazer.git'
+gem 'navel_gazer', :path => '../navel_gazer'
 
 gem 'omniauth-identity'
 gem 'omniauth-instagram'
@@ -20,7 +20,7 @@ gem 'omniauth-foursquare'
 gem 'omniauth-tumblr'
 
 gem 'hbs'
-gem 'handlebars_assets', :git => 'git://github.com/goggin13/handlebars_assets'
+gem 'handlebars_assets'
 
 # Gems used only for assets and not required
 # in production environments by default.

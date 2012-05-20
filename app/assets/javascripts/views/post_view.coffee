@@ -2,17 +2,10 @@ window.PostView = Backbone.View.extend
   tagName:    "div"
   className:  "post"
   template:   JST["posts/show"]
-  events:
-    "click": -> console.debug "click"
     
   initialize: (options) ->
-    console.debug "postview.initialize"
-    console.debug @model
     _.bindAll @
     @model.on("change", => @render())
-  
-  expand: ->
-    console.debug "expand #{@model.id}"
   
   render: ->
     @$el.html @template(@model.toJSON())
@@ -32,16 +25,39 @@ window.PostsView = Backbone.View.extend
     @collection.on("add remove reset", @render)
     
   initViews: ->
-    console.debug "postsview.initViews"
-    console.debug @collection
     @collection.each (post) =>
-      console.debug "div: #post_#{post.id}"
-      console.debug post
       view = new PostView(model: post, el: "#post_#{post.get('id')}")
       @views.push view
     
   render: ->
     @$el.html @template(data: @collection.toJSON())
     @initViews()
+    @
+    
+
+window.DatedAccountPostsView = Backbone.View.extend
+  tagName: "div"
+  class: "account"
+  template: JST["posts/account"]
+  events:
+    "click .post_expander": "expand"
+
+  initialize: (options) ->
+    _.bindAll @
+    #@model.posts.on("reset", @render)
+    
+  expand: ->
+    $.ajax
+      type: 'GET'
+      url: @model.posts.url()
+      data:
+        date: @model.date
+        linked_account_id: @model.linked_account_id
+      success: (response) =>
+        @$el.html response
+        #@model.posts.reset(response.data)
+
+  render: ->
+    @$el.html @template(data: @model.toJSON())
     @
     

@@ -16,8 +16,8 @@
   <script type='text/javascript'>
     preloaded_data = <%= @data.to_json.html_safe %>;
   </script>
-  <%= javascript_include_tag "application" %>
   <%= javascript_include_tag "let_me_in/application" %>
   <%= javascript_include_tag "navel_gazer/application" %>
+  <%= javascript_include_tag "application" %>
 </body>
 </html>

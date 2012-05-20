@@ -45,7 +45,5 @@ module Lifelogline
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     paths["app/views"] << "app/assets/templates"
-    puts (config.railties_order = [:main_app, NavelGazer::Engine, :all])
-    
   end
 end
