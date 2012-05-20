@@ -124,6 +124,25 @@ p {
 
 /******* HEADER ************************/
 
+#control_panel {
+  background-color: #000000;
+  height: 25px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  @include border-radius(0 0px $post-border-radius $post-border-radius);
+  @include box-shadow(1px 1px 2px 0px rgba(254,254,254,0.3));
+  background: rgba(0,0,0,0.8) $spriteurl 0px -250px;
+  color: $white;
+  font-family: adelle, arial, sans-serif;
+  font-weight: 400;  /* regular is 400, bold is 700 */
+  font-size: 1.3em;
+  line-height: 28px;
+  padding: 0 10px 0 55px;
+  z-index: 301;
+  cursor: pointer;
+}
+
 #about {
   color: $dark-grey;
   font-family: adelle, arial, sans-serif;
