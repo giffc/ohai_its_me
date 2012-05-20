@@ -35,3 +35,6 @@ doc/
 .rvmrc
 public/.DS_Store
 .DS_Store
+
+.sass-cache
+public/assets
