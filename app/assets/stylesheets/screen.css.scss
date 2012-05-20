@@ -224,6 +224,14 @@ p {
   background: $spriteurl no-repeat 0px -150px;
 }
 
+.post_expander {
+  font-family: adelle, arial, sans-serif;
+  font-weight: 600;  /* regular is 400, bold is 700 */
+  font-size: 2.0em;
+  color: $bright_blue;
+  cursor: pointer;
+}
+
 #load_more {
   @include border-radius($button-border-radius);
   background-color: $bright_blue;
@@ -237,7 +245,7 @@ p {
   padding: 15px;
 }
 #load_more:hover {
-  
+  background-color: $bright_blue_darker;
 }
 
 pre {

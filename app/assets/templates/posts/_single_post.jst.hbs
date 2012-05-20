@@ -1,19 +1,21 @@
-<div class="lifelog_post {{linked_account.type}}" data-href="{{permalink}}">
-  <div class="media">
-    {{#photos}}
-      <div style='width: {{width}}px, height: {{height}}px'>
-        <img src='{{html}}' title='{{created_at}}' />
-      </div>
-    {{/photos}}
-    <div class='clear'></div>
-  </div>
-  {{#if content}}
-    <div class="lifelog_text">
-      <p>{{content}}</p>
-      <div class="permalink"><a href="{{permalink}}" target="_blank">link</a></div>
+<div>
+  <div class="lifelog_post {{linked_account.type}}" data-href="{{permalink}}">
+    <div class="media">
+      {{#photos}}
+        <div style='width: {{width}}px, height: {{height}}px'>
+          <img src='{{html}}' title='{{created_at}}' />
+        </div>
+      {{/photos}}
+      <div class='clear'></div>
     </div>
-  {{/if}}
-  {{#if additional_count}}
-    
-  {{/if}}  
-</div>  
+    {{#if content}}
+      <div class="lifelog_text">
+        <p>{{content}}</p>
+        <div class="permalink"><a href="{{permalink}}" target="_blank">link</a></div>
+      </div>
+    {{/if}}
+  </div>
+</div>
+{{#if count}}
+  <div class="post_expander">+ {{count}} more</div> 
+{{/if}}  
