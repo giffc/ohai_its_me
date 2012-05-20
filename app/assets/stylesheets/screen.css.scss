@@ -179,7 +179,9 @@ p {
   margin-top: 60px;
   margin-bottom: 20px;
   position: relative;
-  text-align: center;
+  .media {
+    text-align: center;
+  }
   img {
     max-width: 100%;
     @include border-radius($img-border-radius);
