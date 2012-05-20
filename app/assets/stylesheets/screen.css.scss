@@ -151,7 +151,7 @@ p {
   top: 0px;
   right: 1%;
   width: 98%;
-  height: 100px;
+  min-height: 100px;
   z-index: 401;
 }
 #control_panel_close {
@@ -164,6 +164,7 @@ p {
   font-weight: 700;  /* light is 300, bold is 700 */
   font-size: 1.5em;
 }
+#control_panel_close:hover { text-decoration: underline; }
 
 
 #about {
