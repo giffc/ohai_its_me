@@ -182,6 +182,25 @@ p {
   margin-top: 60px;
   margin-bottom: 15px;
   position: relative;
+  &.Foursquare:before {
+    background: $spriteurl no-repeat 0px -150px;
+  }
+  &.Instagram:before {
+    background: $spriteurl no-repeat 0px 0px;
+  }
+  &.Twitter:before {
+    background: $spriteurl no-repeat 0px -50px;
+  }
+  &.Tumblr:before {
+    background: $spriteurl no-repeat 0px -100px;
+  }
+  &.Foursquare:before {
+    background: $spriteurl no-repeat 0px -150px;
+  }
+  &.Lastfm:before {
+    background: $spriteurl no-repeat -50px 0px;
+  }
+  
   .media {
     text-align: center;
   }
@@ -225,18 +244,6 @@ p {
   top: -25px;
   left: 50%;
   margin-left: -25px;
-}
-.lifelog_post.Instagram:before {
-  background: $spriteurl no-repeat 0px 0px;
-}
-.lifelog_post.Twitter:before {
-  background: $spriteurl no-repeat 0px -50px;
-}
-.lifelog_post.Tumblr:before {
-  background: $spriteurl no-repeat 0px -100px;
-}
-.lifelog_post.Foursquare:before {
-  background: $spriteurl no-repeat 0px -150px;
 }
 
 .post_expander {
