@@ -16,7 +16,7 @@ GIT
 
 GIT
   remote: git@github.com:becarella/navel_gazer.git
-  revision: e70d7de8d47e9440286d0e87a89c01a244f5f785
+  revision: 538914680b5f44e7ecf242575ee74e30ac1282b6
   specs:
     navel_gazer (0.0.1)
       embedly
