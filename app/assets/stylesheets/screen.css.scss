@@ -80,7 +80,7 @@ h2 {
   font-family: adelle, arial, sans-serif;
   font-weight: 600;  /* regular is 400, bold is 700 */
   font-size: 2.8em;
-  margin-bottom: 80px;
+  margin: 50px 0 80px 0;
   text-align: center;
   position: relative;
   background-color: $white;
@@ -176,10 +176,12 @@ p {
   @include box-shadow(1px 2px 5px 0px rgba(0,0,0,0.5));
   background-color: #ffffff;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   position: relative;
+  text-align: center;
   img {
-    width: 100%;
+    max-width: 100%;
     @include border-radius($img-border-radius);
   }
   .lifelog_text {
@@ -227,9 +229,17 @@ p {
 .post_expander {
   font-family: adelle, arial, sans-serif;
   font-weight: 600;  /* regular is 400, bold is 700 */
-  font-size: 2.0em;
+  font-size: 1.8em;
   color: $bright_blue;
+  background-color: $white;
   cursor: pointer;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  padding: 5px 0;
+}
+.post_expander:hover {
+  text-decoration: underline;
 }
 
 #load_more {
