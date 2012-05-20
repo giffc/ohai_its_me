@@ -21,17 +21,17 @@ Lifelogline::Application.configure do
   config.assets.digest = true
   
   
-  # Pivot style
-  config.assets.enabled = true
-  config.assets.compile = false
-  config.assets.compress = false
-  #config.assets.precompile += ['print.css', 'unpakt.js', 'vendor.css', 'screen.css']
-  config.assets.initialize_on_precompile = false
-
-  config.serve_static_assets = true
-  #config.static_cache_control = "public, max-age=315360000"
-  config.assets.digest = true
-  config.action_controller.perform_caching = true
+  # # Pivot style
+  # config.assets.enabled = true
+  # config.assets.compile = false
+  # config.assets.compress = false
+  # #config.assets.precompile += ['print.css', 'unpakt.js', 'vendor.css', 'screen.css']
+  # config.assets.initialize_on_precompile = false
+  # 
+  # config.serve_static_assets = true
+  # #config.static_cache_control = "public, max-age=315360000"
+  # config.assets.digest = true
+  # config.action_controller.perform_caching = true
   
 
   # Defaults to Rails.root.join("public/assets")
