@@ -119,6 +119,9 @@ GEM
     omniauth-instagram (1.0.0)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
+    omniauth-lastfm (0.0.2)
+      omniauth-oauth (~> 1.0)
+      rest-client (~> 1.6.6)
     omniauth-oauth (1.0.1)
       oauth
       omniauth (~> 1.0)
@@ -201,6 +204,7 @@ DEPENDENCIES
   omniauth-foursquare
   omniauth-identity
   omniauth-instagram
+  omniauth-lastfm
   omniauth-tumblr
   omniauth-twitter (= 0.0.8)
   pg

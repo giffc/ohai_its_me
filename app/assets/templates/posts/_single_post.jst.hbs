@@ -1,8 +1,14 @@
 <div class="lifelog_post {{linked_account.type}}" data-href="{{permalink}}">
   <div class="media">
-    {{#photos}}
-      <img src='{{html}}' title='{{created_at}}' />
-    {{/photos}}
+    {{#if photos}}
+      {{#photos}}
+        <img src='{{html}}' title='{{created_at}}' />
+      {{/photos}}
+    {{else}}
+      {{#render_media}}
+        {{{html}}}
+      {{/render_media}}
+    {{/if}}
   </div>
   {{#if content}}
     <div class="lifelog_text">
