@@ -124,12 +124,12 @@ p {
 
 /******* HEADER ************************/
 
-#control_panel {
+#control_panel_min {
   background-color: #000000;
   height: 25px;
   position: absolute;
   top: 0px;
-  right: 5px;
+  right: 1%;
   @include border-radius(0 0px $post-border-radius $post-border-radius);
   @include box-shadow(1px 1px 2px 0px rgba(254,254,254,0.3));
   background: rgba(0,0,0,0.8) $spriteurl 0px -250px;
@@ -142,6 +142,29 @@ p {
   z-index: 301;
   cursor: pointer;
 }
+#control_panel {
+  @include border-radius(0 0px $post-border-radius $post-border-radius);
+  @include box-shadow(1px 1px 2px 0px rgba(0,0,0,0.5));
+  background: $white;
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 1%;
+  width: 98%;
+  height: 100px;
+  z-index: 401;
+}
+#control_panel_close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  color: $medium-dark-grey;
+  font-family: myriad-pro, arial, sans-serif;
+  font-weight: 700;  /* light is 300, bold is 700 */
+  font-size: 1.5em;
+}
+
 
 #about {
   color: $dark-grey;

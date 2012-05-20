@@ -9,7 +9,9 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
-  <div ID="control_panel">ohai</div>
+  <div ID="control_panel_min">ohai</div>
+  <%= render :partial => 'shared/controlpanel' %>
+
   <div class="container">
     <%= yield %>
   </div>
