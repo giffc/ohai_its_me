@@ -64,6 +64,8 @@ table {
 body {
   font-size: 62.5%;
   font-family: myriad-pro, arial, sans-serif;
+  background-image: $background;
+  background-repeat: repeat;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl, small, label, th, td {
@@ -83,7 +85,8 @@ h2 {
   margin: 50px 0 80px 0;
   text-align: center;
   position: relative;
-  background-color: $white;
+  background-image: $background;
+  background-repeat: repeat;
   height: 1.3em;
   line-height: 1.3em;
 }
@@ -250,8 +253,9 @@ p {
   font-weight: 600;  /* regular is 400, bold is 700 */
   font-size: 1.6em;
   color: $bright_blue;
-  background-color: $white;
-  cursor: pointer;
+  background-image: $background;
+  background-repeat: repeat;
+    cursor: pointer;
   text-align: center;
   margin-bottom: 50px;
   position: relative;
