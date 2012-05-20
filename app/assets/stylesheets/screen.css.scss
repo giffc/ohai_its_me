@@ -205,10 +205,10 @@ p {
 
 /******* POSTS ************************/
 
-.posts {
+.dates {
   position: relative;
 }
-.posts:before {
+.dates:before {
   position: absolute;
   content: "";
   background: none repeat $dark_grey;
@@ -248,6 +248,9 @@ p {
   
   .media {
     text-align: center;
+  }
+  iframe {
+    max-width: 100%;
   }
   img {
     max-width: 100%;
