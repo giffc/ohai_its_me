@@ -1,11 +1,4 @@
-<div id="about">
-  <div class="header_with_pic">
-    <div class="header_image">
-      <img src="/images/temp_img.jpg" /> <!-- header image 440x150 -->
-      <h1>Your name here</h1>
-    </div>
-  </div>
-</div>
+<%= render :partial => 'shared/about_header' %>
 <div class="dates">
   <%= render :partial => 'posts/dates.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
 </div>
