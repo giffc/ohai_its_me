@@ -4,7 +4,6 @@
   <title>Lifelogline Main</title>
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
   <script type="text/javascript" src="http://use.typekit.com/pvm3vbt.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -13,6 +12,9 @@
   <div class="container">
     <%= yield %>
   </div>
-
+  
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "let_me_in/application" %>
+  <%= javascript_include_tag "navel_gazer/application" %>
 </body>
 </html>
