@@ -1,6 +1,4 @@
 BecarellaHome::Application.routes.draw do
-  get "static_pages/index"
-
   root :to => 'navel_gazer/posts#index'
   match 'posts(/:method)' => 'navel_gazer/posts#index'
 
