@@ -187,13 +187,21 @@ p {
     @include border-radius($img-border-radius);
   }
   .lifelog_text {
+    color: $medium-dark-grey;
+    font-family: myriad-pro, arial, sans-serif;
+    font-weight: 400;  /* light is 300, bold is 700 */
+    font-size: 1.6em;
+    line-height: 1.5em;
     position: relative;
     margin: 12px 0 0 0;
+    p {
+      font-size: 1em;
+    }
     .permalink {
       position: absolute;
-      bottom: -10px;
+      bottom: -12px;
       right: 0px;
-      font-size: 1.2em;
+      font-size: .9em;
       cursor: pointer;
       color: $bright_blue;
       a {
