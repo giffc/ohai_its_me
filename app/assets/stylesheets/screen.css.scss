@@ -99,6 +99,9 @@ h2:after {
   left: 50%;
   margin: 0 0 0 -10px;
 }
+h2:first-child {
+  margin-top: 30px;
+}
 
 p {
   color: $medium-dark-grey;
