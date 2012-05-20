@@ -1,5 +1,5 @@
 
-window.Date = Backbone.Model.extend
+window.TimelineDate = Backbone.Model.extend
   initialize: (options) -> 
     return if !options?
     @date = options.date
@@ -9,8 +9,8 @@ window.Date = Backbone.Model.extend
         @accounts.push(new DatedAccountPosts(_.extend(account, {date: @date})))
 
 
-window.Dates = Backbone.Collection.extend
-  model: Date
+window.TimelineDates = Backbone.Collection.extend
+  model: TimelineDate
   url: -> "/posts.json"
   
   initialize: (options) ->

@@ -5,9 +5,10 @@
 // the compiled file.
 //
 //= require jquery
-//= require ./lib/handlebars
+//= require jquery_ujs
 //= require ./lib/underscore
 //= require ./lib/backbone
+//= require ./lib/handlebars.runtime
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./views

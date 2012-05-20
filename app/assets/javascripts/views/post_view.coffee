@@ -18,7 +18,6 @@ window.PostsView = Backbone.View.extend
   template:   JST["posts/index"]
 
   initialize: (options) ->
-    console.debug "posts view.initialize"
     _.bindAll @
     @views = []
     @initViews()
