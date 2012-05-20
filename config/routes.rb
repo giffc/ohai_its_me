@@ -1,6 +1,5 @@
-Lifelogline::Application.routes.draw do
-  get "static_pages/index"
 
+Lifelogline::Application.routes.draw do
   root :to => 'navel_gazer/posts#index'
   match 'posts(/:method)' => 'navel_gazer/posts#index'
 
