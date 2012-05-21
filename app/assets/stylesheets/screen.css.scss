@@ -256,6 +256,9 @@ p {
   iframe {
     max-width: 100%;
   }
+  object {
+    max-width: 100%;
+  }
   img {
     max-width: 100%;
     @include border-radius($img-border-radius);
