@@ -2,7 +2,7 @@
   <div class="media">
     {{#if photos}}
       {{#photos}}
-        <img src='{{html}}' title='{{created_at}}' />
+        <a href="{{url}}" target="_blank"><img src='{{html}}' title='{{created_at}}' /></a>
       {{/photos}}
     {{else}}
       {{#render_media}}
