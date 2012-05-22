@@ -83,8 +83,8 @@ h2 {
   color: $dark-grey;
   font-family: adelle, arial, sans-serif;
   font-weight: 600;  /* regular is 400, bold is 700 */
-  font-size: 2.8em;
-  margin: 50px 0 80px 0;
+  font-size: 3.4em;
+  margin: 60px 0 0px 0;
   text-align: center;
   position: relative;
   background-image: $background;
@@ -97,15 +97,12 @@ h2:after {
   position: absolute;
   background: none repeat scroll 0 0 #ffffff;
   @include border-radius(100px);
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   border: 3px solid $dark_grey;
   top: 1.2em;
   left: 50%;
-  margin: 0 0 0 -10px;
-}
-h2:first-child {
-  margin-top: 30px;
+  margin: 0 0 0 -8px;
 }
 
 p {
@@ -212,6 +209,7 @@ p {
 
 .dates {
   position: relative;
+  margin-top: -20px;
 }
 .dates:before {
   position: absolute;
@@ -358,5 +356,9 @@ pre {
         }
       }
     }
+  }
+  h2 { 
+    font-size: 2.8em;
+    margin-top: 50px;
   }
 }
