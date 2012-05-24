@@ -33,5 +33,7 @@ go to [http://localhost:3000/accounts](http://localhost:3000/accounts) link your
 go to [http://localhost:3000/](http://localhost:3000/)
 
 Related projects:
+
 [https://github.com/becarella/navel_gazer](https://github.com/becarella/navel_gazer)
+
 [https://github.com/becarella/let_me_in](https://github.com/becarella/let_me_in)
