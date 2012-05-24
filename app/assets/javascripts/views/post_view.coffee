@@ -15,7 +15,7 @@ window.PostView = Backbone.View.extend
 window.PostsView = Backbone.View.extend
   tagName: "div"
   class: "posts"
-  template:   JST["posts/_posts"]
+  template:   JST["posts/_postss"]
 
   initialize: (options) ->
     _.bindAll @
