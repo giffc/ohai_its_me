@@ -3,10 +3,10 @@
 Ohai is a personal timeline that pulls in feeds from your Twitter, Foursquare, Instagram, Tumblr and Last.fm accounts. It was created by Becky and Chris Carella, Ryan Buskirk and Giff Constable. 
 
 ### Examples of Ohai in action
-[http://fridalovelace.com/](http://fridalovelace.com/)
-[http://ccarella.com/](http://ccarella.com/)
-[http://giffc.ohai.me/](http://giffc.ohai.me/)
-[http://ryanbuskirk.com/](http://ryanbuskirk.com/)
+* [http://fridalovelace.com/](http://fridalovelace.com/)
+* [http://ccarella.com/](http://ccarella.com/)
+* [http://giffc.ohai.me/](http://giffc.ohai.me/)
+* [http://ryanbuskirk.com/](http://ryanbuskirk.com/)
 
 ### Detailed Instructions
 
