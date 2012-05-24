@@ -2,6 +2,7 @@ class HandlebarsConfig
 
   def self.register_partial(partial_name, file_name)
     puts "registering partial #{partial_name} #{file_name}"
+    Rails.logger.info "registering partial #{partial_name} #{file_name}"
     Handlebars.handlebars.registerPartial(partial_name, Handlebars.compile(File.open(file_name).read))
   end 
 
