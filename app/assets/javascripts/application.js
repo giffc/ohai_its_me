@@ -6,9 +6,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require handlebars.runtime
 //= require ./lib/underscore
-//= require ./lib/backbone
-//= require ./lib/handlebars.runtime
+//= require_tree ./lib
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./views

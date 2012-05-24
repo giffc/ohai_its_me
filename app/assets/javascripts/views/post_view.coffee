@@ -1,7 +1,7 @@
 window.PostView = Backbone.View.extend
   tagName:    "div"
   className:  "post"
-  template:   JST["posts/show"]
+  template:   JST["posts/_post"]
     
   initialize: (options) ->
     _.bindAll @
@@ -15,7 +15,7 @@ window.PostView = Backbone.View.extend
 window.PostsView = Backbone.View.extend
   tagName: "div"
   class: "posts"
-  template:   JST["posts/index"]
+  template:   JST["posts/_posts"]
 
   initialize: (options) ->
     _.bindAll @
@@ -37,14 +37,12 @@ window.PostsView = Backbone.View.extend
 window.DatedAccountPostsView = Backbone.View.extend
   tagName: "div"
   class: "account"
-  template: JST["posts/account"]
-  # events:  # this clicks on the parent object on the phone
-  #   "click div.post_expander": "expand"
+  template: JST["posts/_account"]
 
   initialize: (options) ->
     _.bindAll @
     @$el.find('.post_expander').click @expand
-    #@model.posts.on("reset", @render)
+    @model.posts.on("reset", @render)
     
   expand: ->
     $.ajax
@@ -54,10 +52,10 @@ window.DatedAccountPostsView = Backbone.View.extend
         date: @model.date
         linked_account_id: @model.linked_account_id
       success: (response) =>
-        @$el.html response
-        #@model.posts.reset(response.data)
+        @model.posts.reset(response.data)
 
   render: ->
-    @$el.html @template(data: @model.toJSON())
+    return if !@model?
+    @$el.html @template(@model.toJSON())
     @
     

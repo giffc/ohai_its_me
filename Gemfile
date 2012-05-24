@@ -11,6 +11,7 @@ gem "render_or_redirect", :git => 'git@github.com:becarella/render_or_redirect.g
 gem 'let_me_in', :git => 'git@github.com:becarella/let_me_in.git'
 gem 'navel_gazer', :git => 'git@github.com:becarella/navel_gazer.git'
 #gem 'navel_gazer', :path => '../navel_gazer'
+#gem 'let_me_in', :path => '../let_me_in'
 
 gem 'omniauth-identity'
 gem 'omniauth-instagram'
@@ -21,7 +22,7 @@ gem 'omniauth-tumblr'
 gem 'omniauth-lastfm'
 
 gem 'hbs'
-gem 'handlebars_assets'
+gem 'handlebars_assets', :git => "https://github.com/goggin13/handlebars_assets.git"
 
 # Gems used only for assets and not required
 # in production environments by default.

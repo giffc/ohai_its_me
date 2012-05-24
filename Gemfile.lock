@@ -6,29 +6,36 @@ GIT
       omniauth-oauth2 (~> 1.0.0)
 
 GIT
-  remote: git@github.com:becarella/let_me_in.git
-  revision: 210262108371603f4e3de4f9e7bd053504e9d597
+  remote: git@github.com:becarella/render_or_redirect.git
+  revision: c9d0f2236e275950d7abd6dc2401975fdf84aa32
+  specs:
+    render_or_redirect (0.0.1)
+      rails
+
+GIT
+  remote: https://github.com/goggin13/handlebars_assets.git
+  revision: d6a500a6c80cda4f990df68cc41d0298f8ebfa61
+  specs:
+    handlebars_assets (0.4.1)
+      execjs (>= 1.2.9)
+      sprockets (>= 2.0.3)
+      tilt
+
+PATH
+  remote: ../let_me_in
   specs:
     let_me_in (0.0.1)
       bcrypt-ruby (~> 3.0.0)
       omniauth-identity
       rails
 
-GIT
-  remote: git@github.com:becarella/navel_gazer.git
-  revision: 749bebbdb976990f289a25ab41ab4e0c78422cc4
+PATH
+  remote: ../navel_gazer
   specs:
     navel_gazer (0.0.1)
       embedly
       rails
       rest-client
-
-GIT
-  remote: git@github.com:becarella/render_or_redirect.git
-  revision: c9d0f2236e275950d7abd6dc2401975fdf84aa32
-  specs:
-    render_or_redirect (0.0.1)
-      rails
 
 GEM
   remote: http://rubygems.org/
@@ -72,7 +79,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
-    embedly (1.5.5)
+    embedly (1.5.6)
       json
       oauth
       querystring
@@ -82,10 +89,6 @@ GEM
       multi_json (~> 1.0)
     faraday (0.8.0)
       multipart-post (~> 1.1)
-    handlebars_assets (0.4.4)
-      execjs (>= 1.2.9)
-      sprockets (>= 2.0.3)
-      tilt
     hashie (1.2.0)
     hbs (0.1.2)
       therubyracer (~> 0.9.4)
@@ -197,7 +200,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
-  handlebars_assets
+  handlebars_assets!
   hbs
   jquery-rails
   let_me_in!

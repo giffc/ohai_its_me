@@ -13,7 +13,7 @@ window.DatedAccountPosts = Backbone.Model.extend
   
   initialize: (options) ->
     @posts = (new Posts).reset(options.posts)
-    @posts.url = -> "/posts/by_account_and_date.html"
+    @posts.url = -> "/posts/by_account_and_date.json"
     @date = options.date
     @type = options.type
     @linked_account_id = options.linked_account_id
