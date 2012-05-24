@@ -1,3 +1,9 @@
+## This repo is the front end to [https://github.com/becarella/navel_gazer](https://github.com/becarella/navel_gazer)
+
+You can see an example of it running at [http://fridalovelace.com/](http://fridalovelace.com/)
+
+Notes:
+
 in ``~/.bash_profile``
 
 ```
@@ -32,8 +38,6 @@ go to [http://localhost:3000/accounts](http://localhost:3000/accounts) link your
 
 go to [http://localhost:3000/](http://localhost:3000/)
 
-Related projects:
+## Created by
 
-[https://github.com/becarella/navel_gazer](https://github.com/becarella/navel_gazer)
-
-[https://github.com/becarella/let_me_in](https://github.com/becarella/let_me_in)
+Becky Carella, Ryan Buskirk, Giff Constable, Chris Carella
