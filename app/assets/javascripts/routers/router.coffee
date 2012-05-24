@@ -6,7 +6,8 @@ Router = Backbone.Router.extend
 
   dates: ->
     if preloaded_data?
-      @_createDatesView(preloaded_data)
+      view = @_createDatesView(preloaded_data)
+      $('.dates').html(view.render().el.innerHTML)
   
   _createDatesView: (data) ->
     dates = (new TimelineDates).reset(preloaded_data)
