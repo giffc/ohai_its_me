@@ -1,8 +1,13 @@
-## This repo is the front end to [https://github.com/becarella/navel_gazer](https://github.com/becarella/navel_gazer)
+## Ohai: a personal social media timeline
 
-You can see an example of it running at [http://fridalovelace.com/](http://fridalovelace.com/)
+Ohai is a personal timeline that pulls in feeds from your Twitter, Foursquare, Instagram, Tumblr and Last.fm accounts. It was created by Becky and Chris Carella, Ryan Buskirk and Giff Constable. You can see an example of it running at [http://fridalovelace.com/](http://fridalovelace.com/)
 
-Notes:
+This repository "ohai it's me" is the front end to [https://github.com/becarella/navel_gazer](https://github.com/becarella/navel_gazer)
+
+Full instructions for hosting your own can be found here: [https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai_its_me-on-Heroku](https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai_its_me-on-Heroku)
+
+
+### Notes for running locally:
 
 in ``~/.bash_profile``
 
@@ -37,7 +42,3 @@ go to [http://localhost:3000/accounts](http://localhost:3000/accounts) link your
 ```
 
 go to [http://localhost:3000/](http://localhost:3000/)
-
-## Created by
-
-Becky Carella, Ryan Buskirk, Giff Constable, Chris Carella
