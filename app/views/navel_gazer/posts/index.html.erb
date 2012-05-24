@@ -1,5 +1,6 @@
 <%= render :partial => 'shared/about_header' %>
 <div class="dates">
+  <% logger.debug @data.as_json %>
   <%= render :partial => 'posts/dates.jst', :locals => {:hbs =>  {:data => @data.as_json } } %>
 </div>
 <% if @data.length > 0 %>
