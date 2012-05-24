@@ -10,7 +10,7 @@ Ohai is a personal timeline that pulls in feeds from your Twitter, Foursquare, I
 
 ### Detailed Instructions
 
-Full instructions for hosting your own can be found here: [https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai_its_me-on-Heroku](https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai_its_me-on-Heroku)
+Full instructions for hosting your own can be found here: [https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai-on-Heroku](https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai-on-Heroku)
 
 
 ### Notes for running locally:
