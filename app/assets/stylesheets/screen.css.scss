@@ -335,6 +335,20 @@ p {
   background-color: $bright_blue_darker;
 }
 
+#footer {
+  margin: 30px 0;
+  p {
+    text-align: right;
+    font-style: italic;
+    font-size: 1.3em;
+    color: $medium-grey;
+    a {
+      color: $dark-grey;
+      font-weight: 700;
+    }
+  }
+}
+
 pre {
   font-family: courier, sans-serif;
   overflow: hidden;
