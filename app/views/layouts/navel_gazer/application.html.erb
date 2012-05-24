@@ -5,8 +5,7 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <%= stylesheet_link_tag    "application" %>
   <%= csrf_meta_tags %>
-  <script type="text/javascript" src="http://use.typekit.com/pvm3vbt.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <%= render :partial => 'shared/webfont_script' %>
 </head>
 <body>
   <div ID="control_panel_min">ohai</div>
