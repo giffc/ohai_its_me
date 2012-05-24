@@ -1,6 +1,6 @@
 
 Lifelogline::Application.routes.draw do
-  root :to => 'posts#index', :defaults => {:limit => 2}
+  root :to => 'posts#index'
   match 'posts(/:method)' => 'posts#index'
 
   match 'signin' => 'let_me_in/sessions#new'
