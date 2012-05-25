@@ -1,6 +1,6 @@
 @import "shared/includes";
 
-/********** Copyright 2012 Giff Constable, Becky Carella, Ryan Buskirk ***********/
+/********** Copyright 2012 Becky Carella, Giff Constable, Ryan Buskirk, Chris Carella ***********/
 
 /**** RESET ***************************************************/
 
@@ -328,10 +328,25 @@ p {
   color: $white;
   text-align: center;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 0 14px 0;
+  margin: 30px 0;
 }
 #load_more:hover {
   background-color: $bright_blue_darker;
+}
+
+#footer {
+  margin: 30px 0 0 0;
+  p {
+    text-align: right;
+    font-style: italic;
+    font-size: 1.3em;
+    color: $medium-grey;
+    a {
+      color: $dark-grey;
+      font-weight: 700;
+    }
+  }
 }
 
 pre {

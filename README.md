@@ -1,3 +1,20 @@
+## Ohai: a personal social media timeline
+
+Ohai is a personal timeline that pulls in feeds from your Twitter, Foursquare, Instagram, Tumblr and Last.fm accounts. It was created by Becky and Chris Carella, Ryan Buskirk and Giff Constable. 
+
+### Examples of Ohai in action
+* [http://fridalovelace.com/](http://fridalovelace.com/)
+* [http://ccarella.com/](http://ccarella.com/)
+* [http://giffc.ohai.me/](http://giffc.ohai.me/)
+* [http://ryanbuskirk.com/](http://ryanbuskirk.com/)
+
+### Detailed Instructions
+
+Full instructions for hosting your own can be found here: [https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai-on-Heroku](https://github.com/giffc/ohai_its_me/wiki/Hosting-Your-Own-Ohai-on-Heroku)
+
+
+### Notes for running locally:
+
 in ``~/.bash_profile``
 
 ```
@@ -31,3 +48,6 @@ go to [http://localhost:3000/accounts](http://localhost:3000/accounts) link your
 ```
 
 go to [http://localhost:3000/](http://localhost:3000/)
+
+### Final Notes
+This repository is the front end to [https://github.com/becarella/navel_gazer](https://github.com/becarella/navel_gazer)
