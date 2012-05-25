@@ -15,3 +15,6 @@
 //= require_tree ./routers
 //= require_tree .
 
+$(document).ready(function() {
+  Backbone.history.start({pushState: true}); 
+});

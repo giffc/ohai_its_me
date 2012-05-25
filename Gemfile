@@ -21,8 +21,8 @@ gem 'omniauth-foursquare'
 gem 'omniauth-tumblr'
 gem 'omniauth-lastfm'
 
-gem 'hbs'
-gem 'handlebars_assets', :git => "https://github.com/goggin13/handlebars_assets.git"
+gem 'handlebars_wax', :git => 'git@github.com:goggin13/handlebars_wax.git' 
+gem 'handlebars_assets', :git => 'git@github.com:goggin13/handlebars_assets.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

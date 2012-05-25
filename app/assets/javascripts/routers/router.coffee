@@ -15,5 +15,3 @@ Router = Backbone.Router.extend
 
     
 window.admin_router = new Router()
-
-Backbone.history.start({pushState: true})
