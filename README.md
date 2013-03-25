@@ -18,13 +18,13 @@ Full instructions for hosting your own can be found here: [https://github.com/gi
 in ``~/.bash_profile``
 
 ```
-  export TWITTER_KEY="u7wnUBikdHd4n2hXOqcg"
-  export TWITTER_SECRET="YRXXhFz8SiAuYjHtEHYGd6Jn7C54H4YPGgmdhQ8mU"
+  export TWITTER_KEY="xxxxx"
+  export TWITTER_SECRET="xxxxx"
   
-  export EMBEDLY_KEY="8e99ebaaa11c11e1b7a14040aae4d8c9"
+  export EMBEDLY_KEY="xxxxx"
   
-  export INSTAGRAM_KEY="5514305314d64036b495104345911dfa"
-  export INSTAGRAM_SECRET="70d8e9f8b77b4637ad919514a807c046"
+  export INSTAGRAM_KEY="xxxxxx"
+  export INSTAGRAM_SECRET="xxxxxx"
 ```
 restart terminal
 
